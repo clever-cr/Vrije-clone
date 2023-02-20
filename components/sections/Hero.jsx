@@ -12,12 +12,12 @@ const Hero = () => {
               You don’t just become something, you become someone
             </h1>
             <div className="flex justify-between  left-[264px] absolute right-[264px]  z-10 top-72 sm:top-48 sm:flex-col sm:right-0 sm:left-0 ">
-              <div className="flex justify-between  bg-blue w-full px-[40px] items-center border-b  pb-0 sm:px-5">
+              <div className="flex justify-between relative bg-blue w-full px-[40px] items-center   pb-[30px] sm:px-5">
                 <input
                   placeholder="Search..."
-                  className="outline-none text-white text-lg bg-blue py-30 sm:py-5"
+                  className="outline-none w-full placeholder:text-white text-lg bg-blue pt-30 sm:py-5- border-b"
                 />
-                <CiSearch className="w-8 h-6 text-white font-bold" />
+                <CiSearch className="w-8 h-6 text-white font-bold absolute right-10 top-8 sm:right-[20px]" />
               </div>
               <div className="flex items-center bg-white w-full px-5 justify-between text-blue sm:py-5">
                 <p className="text-[22px] leading-[30px] font-light">
