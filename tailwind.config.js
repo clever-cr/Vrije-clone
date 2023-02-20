@@ -14,7 +14,8 @@ module.exports = {
       colors: {
         light: "#EEEBE9",
         dark: "#F2EFED",
-        blue: "#0077B3"
+        blue: "#0077B3",
+        orange: "#cc4100"
 
       },
       gap: {
