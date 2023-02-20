@@ -11,7 +11,7 @@ const Hero = () => {
             <h1 className="text-[45px]  text-[#333333] font-light text-left pt-30 px-[216px] sm:text-[33px] sm:leading-[40px] sm:px-5 ">
               You don’t just become something, you become someone
             </h1>
-            <div className="flex justify-between  left-[264px] absolute right-[264px]  z-10 top-72 sm:top-48 sm:flex-col sm:right-0 sm:left-0 ">
+            <div className="flex justify-between max-w-[1008px] mx-auto   left-[264px] absolute right-[264px]  z-10 top-72 sm:top-48 sm:flex-col sm:right-0 sm:left-0 ">
               <div className="flex justify-between relative bg-blue w-full px-[40px] items-center   pb-[30px] sm:px-5">
                 <input
                   placeholder="Search..."
@@ -29,7 +29,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative ">
+      <div className="relative max-w-[1500px] mx-auto">
         <Image
           width={1536}
           height={460}
