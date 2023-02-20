@@ -27,7 +27,7 @@ const Card = ({
       >
         {title}
       </p>
-      <div className="w-[316px] shadow-lg px-[20px] py-[20px] flex flex-col gap-[5px] ">
+      <div className="w-[316px] sm:w-[463px] shadow-lg px-[20px] py-[20px] flex flex-col gap-[5px] ">
         <div className="flex items-center justify-between">
           <p>{description}</p>
           <>{arrow}</>

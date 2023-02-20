@@ -3,9 +3,9 @@ import Card from "../ui/Card";
 import { AiOutlineArrowRight } from "react-icons/ai";
 const Features = () => {
   return (
-    <div className="px-134">
+    <div className="px-134 sm:px-0">
       <div className="bg-white">
-        <div className="px-[132px] py-[60px] flex gap-5">
+        <div className="px-[132px] py-[60px] flex gap-5 sm:px-5 sm:flex-col">
           <Card
             title={"VU main menu"}
             style={"text-blue"}

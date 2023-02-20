@@ -10,6 +10,7 @@ import Work from '../components/sections/Work'
 import Amsterdam from '../components/sections/Amsterdam'
 import Look from '../components/sections/Look'
 import Features from '../components/sections/Features'
+import Footer from '../components/layout/Footer'
 const index = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const index = () => {
       <Amsterdam />
       <Look />
       <Features />
+      <Footer />
     </div>
   )
 }

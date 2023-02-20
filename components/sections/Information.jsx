@@ -11,16 +11,16 @@ const Information = () => {
     },
   ];
   return (
-    <div className="px-134 ">
+    <div className="px-134 sm:px-0">
       <div className="bg-white  ">
-        <div className="flex   gap-5 px-[132px] py-[60px]">
+        <div className="flex   gap-5 px-[132px] py-[60px] sm:flex-col sm:px-5">
           {data.map((item, index) => {
             return (
               <div
                 key={index}
-                className="shadow-lg w-[484px] h-[179px] flex flex-col px-[30px] py-[25px] justify-between"
+                className="shadow-lg w-[484px] sm:w-[443px] h-[179px] flex flex-col px-[30px] py-[25px] justify-between "
               >
-                <div>
+                <div className="flex flex-col gap-5">
                   <p
                     className={`text-2xl leading-9 text-[#008053] font-light ${
                       index == 1 ? "text-[#3b2171]" : ""

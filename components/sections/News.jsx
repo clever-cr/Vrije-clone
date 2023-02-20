@@ -32,12 +32,12 @@ const News = () => {
     },
   ];
   return (
-    <div className="px-134">
-      <div className="bg-[#FAF7F5] px-[132px] pt-[60px]">
+    <div className="px-134 sm:px-0">
+      <div className="bg-[#FAF7F5] px-[132px] pt-[60px] sm:px-5">
         <h1 className="text-[38px] leading-[56px] text-[#3b2171] font-light ">
           News
         </h1>
-        <div className="flex gap-x-[80px] pt-[25px]">
+        <div className="flex gap-x-[80px] pt-[25px] sm:flex-col sm:gap-[35px]">
           <div className="gap-[25px] flex flex-col justify-between">
             {data.map((item, index) => {
               return (
@@ -68,7 +68,7 @@ const News = () => {
               );
             })}
           </div>
-          <div className="flex flex-col gap-y-[97px]">
+          <div className="flex flex-col gap-y-[97px] sm:gap-[35px]">
             {info.map((item, index) => {
               return (
                 <div key={index} className="flex gap-x-[30px] ">

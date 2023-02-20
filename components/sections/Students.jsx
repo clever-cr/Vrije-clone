@@ -31,7 +31,7 @@ const Students = () => {
       program5: "Study guide",
     },
     {
-      title: "Education",
+      title: "Research",
       arrow: <AiOutlineArrowRight />,
       program1: "Bachelor's programmes",
       program2: " Master's programmes",
@@ -41,29 +41,31 @@ const Students = () => {
     },
   ];
   return (
-    <div className="px-134 relative z-10 -mt-11">
+    <div className="px-134 relative z-10 -mt-11 sm:px-0 sm:mt-0">
       <div className="bg-white  pb-[60px] ">
-        <div className="flex justify-between pl-32 pr-[98px] pt-[34px]">
+        <div className="flex justify-between pl-32 pr-[98px] pt-[34px] sm:px-0 ">
           {data.map((item, index) => {
             return (
-              <div key={index} className="flex items-center gap-[15px]">
-                {/* <div> {item.icon}</div> */}
-                <SlGraduation className="text-blue w-10 h-10" />
-                <h1 className="text-lg text-[#333333] font-medium leading-5">
+              <div
+                key={index}
+                className="flex items-center gap-[15px] sm:flex-col sm:justify-center sm:gap-2"
+              >
+                <SlGraduation className="text-blue w-10 h-10 sm:w-5 sm:h-5" />
+                <h1 className="text-lg text-[#333333] font-medium leading-5 sm:text-base sm:text-center">
                   {item.text}
                 </h1>
               </div>
             );
           })}
         </div>
-        <div className="flex px-[132px] gap-5 pt-justify-between pt-[74px]">
+        <div className="flex px-[132px] gap-5 gap-[35px] pt-justify-between pt-[74px] sm:flex-col sm:px-5">
           {info.map((item, index) => {
             return (
               <div
                 key={index}
-                className="shadow-xl   w-[484px] px-[30px] p-[30px]  "
+                className="shadow-md   w-[484px] px-[30px] p-[30px]  sm:py-[20px]"
               >
-                <div className="flex items-center justify-between pb-[30px]">
+                <div className="flex items-center justify-between pb-[30px] sm:pb-[10px]">
                   <h1 className="text-[38px] text-blue font-light">
                     {item.title}
                   </h1>
@@ -106,9 +108,9 @@ const Students = () => {
           })}
         </div>
         <div className="pt-[30px]">
-          <div className="bg-white px-[132px] py-[60px]">
-            <div className="bg-blue flex px-[60px] justify-between py-[45px]">
-              <p className="text-2xl leading-9 text-white font-medium">
+          <div className="bg-white px-[132px] py-[60px] sm:px-5">
+            <div className="bg-blue flex px-[60px] justify-between py-[45px] sm:flex-col sm:py-[30px] sm:px-[20px] sm:gap-[35px]">
+              <p className="text-2xl leading-9 text-white font-medium sm:text-[22px] sm:leading-[33px]">
                 Do you also want to change your world?
               </p>
               <button className="text-2xl leading-[30px] text-[#333333] font-medium bg-white px-[30px] py-[15px]">
