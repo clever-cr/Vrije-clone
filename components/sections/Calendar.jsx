@@ -41,8 +41,8 @@ const Calendar = () => {
             description={"PhD defence by T.J.H. Jonkers"}
           />
         </div>
-        <div className="flex justify-between items-center border-t border-blue pt-">
-          <div className="flex justify-center items-center gap-x-[15px] py-[60px]-">
+        <div className="flex justify-between items-center border-t border-blue pb-[60px]">
+          <div className="flex justify-center items-center gap-x-[15px] ">
             <p className="text-lg leading-[30px] font-medium text-[#333333] ">
               View calendar
             </p>
