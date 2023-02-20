@@ -21,7 +21,7 @@ const Impact = () => {
             alt=""
             width={1252}
             height={575}
-            className="sm:relative"
+            className="sm:relative h-[575px] object-cover sm:h-[188px]"
           />
           <div className="bg-white w-[576px] sm:w-full h-[306px] relative -mt-56 left-[379px] flex flex-col justify-between  pt-[45px] sm:mt-0 sm:left-0 sm:pt-[55px]">
             <div className="px-[60px] sm:px-5 ">
