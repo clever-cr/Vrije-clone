@@ -22,7 +22,7 @@ const Impact = () => {
           height={575}
           className="sm:relative"
         />
-        <div className="bg-white w-[576px] sm:w-[483px] h-[306px] relative -mt-56 left-[379px] flex flex-col justify-between  pt-[45px] sm:mt-0 sm:left-0 sm:pt-[55px]">
+        <div className="bg-white w-[576px] sm:w-full h-[306px] relative -mt-56 left-[379px] flex flex-col justify-between  pt-[45px] sm:mt-0 sm:left-0 sm:pt-[55px]">
           <div className="px-[60px] sm:px-5 ">
             <h3 className="text-2xl leading-9 text-orange font-light sm:text-[22px] sm:leading-[32px]">
               Science to Impact

@@ -7,7 +7,7 @@ const Look = () => {
         <h3 className="text-[38px] sm:text-[30px] sm:leading-9 leading-[56px] text-[#008053] font-light  pb-[25px]">
           Take a look
         </h3>
-        <div className="w-[316px] sm:w-[443px] sm:h-[160px] h-[240px] shadow-md bg-white px-[30px] pt-[30px] flex flex-col justify-between">
+        <div className="w-[316px] sm:w-full sm:h-[160px] h-[240px] shadow-md bg-white px-[30px] pt-[30px] flex flex-col justify-between">
           <p className="text-2xl sm:text-[22px] sm:leading-[32px] leading-9 font-light text-[#008053]">
             VU Campus Tour
           </p>

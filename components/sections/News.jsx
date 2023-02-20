@@ -43,20 +43,21 @@ const News = () => {
               return (
                 <div
                   key={index}
-                  className="flex gap-x-[30px] w-[284px]- h-[216px]"
+                  className="flex gap-x-[30px]  sm:w-full h-[216px] sm:h-[100px]"
                 >
                   <Image
                     src={item.image}
                     alt="image"
                     width={284}
                     height={335}
+                    className={"sm:w-[134px] sm:h-[101px]"}
                   />
-                  <div className="flex flex-col  justify-between">
+                  <div className="flex flex-col  justify-between-">
                     <div className="gap-[10px]">
                       <p className="text-lg text-[#3b2171] leading-[30px] font-bold">
                         {item.date}
                       </p>
-                      <p className="text-2xl leading-[30px] font-light text-[#333333]">
+                      <p className="text-2xl sm:text-lg leading-[30px] font-light text-[#333333]">
                         {item.description}
                       </p>
                     </div>
@@ -72,7 +73,13 @@ const News = () => {
             {info.map((item, index) => {
               return (
                 <div key={index} className="flex gap-x-[30px] ">
-                  <Image src={item.image} alt="image" width={113} height={86} />
+                  <Image
+                    src={item.image}
+                    alt="image"
+                    width={113}
+                    height={86}
+                    className={"sm:w-[134px] sm:h-[101px]"}
+                  />
                   <div className="flex flex-col  ">
                     <div>
                       <p className="text-lg text-[#3b2171] leading-[30px] font-bold">
@@ -82,7 +89,7 @@ const News = () => {
                         <p className="text-lg leading-[30px] font-light text-[#333333] ">
                           {item.description}
                         </p>
-                        <AiOutlineArrowRight className="w-5 h-10 text-[#333333] pt-6" />
+                        <AiOutlineArrowRight className="w-5 h-10 text-[#333333] pt-6 sm:w-12 sm:h-10" />
                       </div>
                     </div>
                   </div>
