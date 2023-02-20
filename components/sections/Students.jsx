@@ -43,7 +43,7 @@ const Students = () => {
   return (
     <div className="px-134  sm:px-0 sm:mt-0">
       <div className=" max-w-[1258px] mx-auto">
-        <div className="bg-white  pb-[60px] relative z-10 -mt-11 ">
+        <div className="bg-white  pb-[60px] relative z-10 -mt-11 sm:mt-0">
           <div className="flex justify-between pl-32 pr-[98px] pt-[34px] sm:px-0 ">
             {data.map((item, index) => {
               return (

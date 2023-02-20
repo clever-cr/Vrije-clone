@@ -29,13 +29,13 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="relative max-w-[1500px] mx-auto">
+      <div className="relative max-w-[1700px] mx-auto">
         <Image
           width={1536}
           height={460}
           src="/images/people.jpeg"
           alt="image"
-          className="padding-0"
+          className="padding-0 sm:h-[180px] sm:object-cover"
         />
       </div>
     </div>
