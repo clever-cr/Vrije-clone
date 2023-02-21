@@ -4,12 +4,12 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 const News = () => {
   const data = [
     {
-      image: "/images/VUvlag.png",
+      image: "/images/p1.jpg",
       date: "08 Feb 2023",
       description: "Earthquakes Turkey and Syria",
     },
     {
-      image: "/images/VUvlag.png",
+      image: "/images/birds.png",
       date: "08 Feb 2023",
       description: "Earthquakes Turkey and Syria",
     },
@@ -21,12 +21,12 @@ const News = () => {
       description: "EU grant to improve mental well-being o",
     },
     {
-      image: "/images/stars.jpg",
+      image: "/images/town.jpg",
       date: " 06 Feb 2023",
       description: "EU grant to improve mental well-being o",
     },
     {
-      image: "/images/stars.jpg",
+      image: "/images/person.png",
       date: " 06 Feb 2023",
       description: "EU grant to improve mental well-being o",
     },
@@ -51,9 +51,9 @@ const News = () => {
                       alt="image"
                       width={284}
                       height={335}
-                      className={"sm:w-[134px] sm:h-[101px]"}
+                      className={"sm:w-[134px] sm:h-[101px] object-cover"}
                     />
-                    <div className="flex flex-col  justify-between-">
+                    <div className="flex flex-col  justify-between">
                       <div className="gap-[10px]">
                         <p className="text-lg text-[#3b2171] leading-[30px] font-bold">
                           {item.date}

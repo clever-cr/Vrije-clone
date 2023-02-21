@@ -8,7 +8,12 @@ import {
 const Amsterdam = () => {
   const cards = [
     {
-      image: "/images/guy.webp",
+      image: "/images/long.webp",
+      title: "The Free writer",
+      read: "readmore",
+    },
+    {
+      image: "/images/long.webp",
       title: "The Free writer",
       read: "readmore",
     },
@@ -18,12 +23,7 @@ const Amsterdam = () => {
       read: "readmore",
     },
     {
-      image: "/images/guy.webp",
-      title: "The Free writer",
-      read: "readmore",
-    },
-    {
-      image: "/images/guy.webp",
+      image: "/images/dancers.webp",
       title: "The Free writer",
       read: "readmore",
     },
@@ -55,7 +55,7 @@ const Amsterdam = () => {
                       alt="image"
                       width={296}
                       height={359}
-                      className={"sm:w-[376px] h-[502px]"}
+                      className={"sm:w-[376px] h-[502px] object-cover"}
                     />
                     <h3 className="text-orange text-2xl leading-9 font-light pt-[33px] sm:text-[22px]">
                       {item.title}
@@ -72,7 +72,7 @@ const Amsterdam = () => {
             </div>
           </div>
           <div className="right-0 absolute pt-[30px]">
-            <div className="flex  text-[#333333] bg-[#dff2fd] px-[20px] py-[16px] gap-11 sm:hidden">
+            <div className="flex  text-[#333333] bg-[#FCD3B6] px-[20px] py-[16px] gap-11 sm:hidden">
               <AiOutlineLeft className="w-8  h-8" />
               <AiOutlineRight className="w-8  h-8" />
             </div>

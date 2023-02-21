@@ -1,22 +1,25 @@
 import React from "react";
 import { SlGraduation } from "react-icons/sl";
+import { TbPuzzle } from "react-icons/tb";
+import { FaMedal } from "react-icons/fa";
+import { TiWorldOutline } from "react-icons/ti";
 import { AiOutlineArrowRight } from "react-icons/ai";
 const Students = () => {
   const data = [
     {
-      icon: <SlGraduation />,
+      icon: <SlGraduation className="text-blue w-10 h-10 sm:w-5 sm:h-5" />,
       text: "31.704 students",
     },
     {
-      icon: <SlGraduation />,
+      icon: <TiWorldOutline className="text-blue w-10 h-10 sm:w-5 sm:h-5" />,
       text: "5.190 international students",
     },
     {
-      icon: <SlGraduation />,
+      icon: <FaMedal className="text-blue w-10 h-10 sm:w-5 sm:h-5" />,
       text: "459 PhD defences",
     },
     {
-      icon: <SlGraduation />,
+      icon: <TbPuzzle className="text-blue w-10 h-10 sm:w-5 sm:h-5" />,
       text: "9 faculties",
     },
   ];
@@ -51,7 +54,9 @@ const Students = () => {
                   key={index}
                   className="flex items-center gap-[15px] sm:flex-col sm:justify-center sm:gap-2"
                 >
-                  <SlGraduation className="text-blue w-10 h-10 sm:w-5 sm:h-5" />
+                  <>{item.icon}</>
+
+                  {/* <> className="text-blue w-10 h-10 sm:w-5 sm:h-5" /> */}
                   <h1 className="text-lg text-[#333333] font-medium leading-5 sm:text-base sm:text-center">
                     {item.text}
                   </h1>
