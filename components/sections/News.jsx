@@ -44,7 +44,7 @@ const News = () => {
                 return (
                   <div
                     key={index}
-                    className="flex gap-x-[30px]  sm:w-full h-[216px] sm:h-[100px]"
+                    className="flex gap-x-[30px]  sm:w-full h-[216px] sm:h-[100px] max-w-[568px]"
                   >
                     <Image
                       src={item.image}
@@ -54,16 +54,16 @@ const News = () => {
                       className={"sm:w-[134px] sm:h-[101px] object-cover"}
                     />
                     <div className="flex flex-col  justify-between">
-                      <div className="gap-[10px]">
+                      <div className=" flex flex-col gap-[10px]">
                         <p className="text-lg text-[#3b2171] leading-[30px] font-bold">
                           {item.date}
                         </p>
-                        <p className="text-2xl sm:text-lg leading-[30px] font-light text-[#333333]">
+                        <p className="text-2xl sm:text-lg leading-[30px] pr-[25px] font-light text-[#333333]">
                           {item.description}
                         </p>
                       </div>
                       <div className="flex  justify-end">
-                        <AiOutlineArrowRight className="w-5 h-10 text-[#333333]" />
+                        <AiOutlineArrowRight className="w-5  text-[#333333]" />
                       </div>
                     </div>
                   </div>
@@ -87,7 +87,7 @@ const News = () => {
                           {item.date}
                         </p>
                         <div className="flex items-end">
-                          <p className="text-lg leading-[30px] font-light text-[#333333] ">
+                          <p className="text-lg leading-[30px] font-light text-[#333333]  max-w-[172px]">
                             {item.description}
                           </p>
                           <AiOutlineArrowRight className="w-5 h-10 text-[#333333] pt-6 sm:w-12 sm:h-10" />

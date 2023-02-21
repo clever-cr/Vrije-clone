@@ -10,27 +10,22 @@ const Amsterdam = () => {
     {
       image: "/images/long.webp",
       title: "The Free writer",
-      read: "readmore",
     },
     {
       image: "/images/long.webp",
       title: "The Free writer",
-      read: "readmore",
     },
     {
       image: "/images/guy.webp",
       title: "The Free writer",
-      read: "readmore",
     },
     {
       image: "/images/dancers.webp",
       title: "The Free writer",
-      read: "readmore",
     },
     {
       image: "/images/guy.webp",
       title: "The Free writer",
-      read: "readmore",
     },
   ];
   return (
@@ -41,12 +36,12 @@ const Amsterdam = () => {
             We are Vu
           </h3>
           <div className="sm:min-w-[380px] sm:mx-auto sm:overflow-y-scroll scrollHidden">
-            <div className="flex justify-center gap-[30px]  px-[102px]- sm:px-5 overflow-hidden sm:grid-cols-[repeat(3,_400px)]  sm:gap-0">
+            <div className="flex justify-center gap-[30px]- pt-[25px] px-[102px]- sm:px-5 overflow-hidden sm:grid-cols-[repeat(3,_400px)]  sm:gap-0">
               {cards.map((item, index) => {
                 return (
                   <div
                     key={index}
-                    className={`hover:shadow-2xl min-w-[329px] h-[597px] flex flex-col justify-center p-[30px] sm:min-w-[406px] sm:h-[651px] ${
+                    className={`hover:shadow-2xl min-w-[329px] flex flex-col  justify-center p-[30px] sm:min-w-[406px] sm:h-[651px] ${
                       index == 2 || index == 1 ? "sm:hidden" : ""
                     }`}
                   >
@@ -55,16 +50,20 @@ const Amsterdam = () => {
                       alt="image"
                       width={296}
                       height={359}
-                      className={"sm:w-[376px] h-[502px] object-cover"}
+                      className={
+                        "h-[359px] w-[296px] sm:w-[376px] sm:h-[502px] object-cover"
+                      }
                     />
-                    <h3 className="text-orange text-2xl leading-9 font-light pt-[33px] sm:text-[22px]">
+                    <h3 className="text-orange text-2xl leading-9 font-light pt-[30px] sm:text-[22px]">
                       {item.title}
                     </h3>
-                    <div className="flex items-center justify-between pt-[17px]">
+                    <div className="flex flex-col justify-between pt-2.5">
                       <p className="text-lg text-[#333333] leading-[30px]">
-                        {item.read}
+                        Read more
                       </p>
-                      <AiOutlineArrowRight />
+                      <div className="flex justify-end pt-[24px]">
+                        <AiOutlineArrowRight />
+                      </div>
                     </div>
                   </div>
                 );

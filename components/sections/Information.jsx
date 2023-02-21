@@ -20,12 +20,14 @@ const Information = () => {
               return (
                 <div
                   key={index}
-                  className="shadow-medium w-[484px] sm:w-full h-[179px] flex flex-col px-[30px] py-[25px] justify-between "
+                  className={`shadow-medium w-[484px] sm:w-full h-[179px] flex flex-col px-[30px] py-[25px] justify-between ${
+                    index == 1 ? "sm:h-[125px] " : ""
+                  }`}
                 >
                   <div className="flex flex-col gap-5">
                     <p
                       className={`text-2xl leading-9 text-[#008053] font-light ${
-                        index == 1 ? "text-[#3b2171]" : ""
+                        index == 1 ? "text-[#3b2171] " : ""
                       }`}
                     >
                       {item.title}
