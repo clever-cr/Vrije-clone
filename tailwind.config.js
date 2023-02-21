@@ -28,7 +28,8 @@ module.exports = {
         light: "#EEEBE9",
         dark: "#F2EFED",
         blue: "#0077B3",
-        orange: "#cc4100"
+        orange: "#cc4100",
+        darkgray: "#333333"
 
       },
       gap: {
@@ -40,6 +41,9 @@ module.exports = {
         26: "1.625rem",
         30: "1.875rem",
         134: "8.375rem"
+      },
+      boxShadow: {
+        medium: "0 0 60px 0 rgb(0 0 0 / 10%)"
       }
     },
   },

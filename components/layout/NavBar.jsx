@@ -13,27 +13,28 @@ const NavBar = () => {
     return () => (document.body.style.overflow = "scroll");
   }, [menuIsOpen]);
   return (
-    <div className="px-134 fixed w-full z-50 sm:px-0 bg-light">
+    <div className="px-134 fixed w-full z-50 sm:px-0 bg-light- top-0">
       <div className="max-w-[1258px] mx-auto">
-        <div className="flex items-center- justify-between  ">
+        <div className="flex justify-between shadow-medium h-[75px] sm:h-[60px] items-center">
           <Link
             href={"/"}
-            className="bg-white w-full px-30 py-15 shadow-xl sm:pt-[12px] "
+            className="bg-white w-full px-30 py-15 sm:pt-[12px] sm:px-5 sm:py-2.5 inline-block h-full"
           >
             <Image
               width={185}
               height={45}
               src="/images/VU-logo-nobg.svg"
               alt="logo"
+              className="sm:w-[164px] h-[40px]"
             />
           </Link>
 
-          <div className="flex items-center gap-30 sm:gap-[15px] bg-dark px-30 py-26  h-full shadow-xl  sm:pt-[17px] sm:pb-[]19px">
-            <p className="text-xl">EN</p>
-            <CiUser className="w-8 h-6" />
-            <CiSearch className="w-8 h-6" />
+          <div className="flex items-center gap-6 sm:gap-[15px] bg-dark px-30 pb-[24px] pt-[23px] h-full sm:px-5  sm:pt-[17px] w-[234px]-">
+            <p className="text-[23.94px] font-light text-darkgray">EN</p>
+            <CiUser className="w-6 h-10" />
+            <CiSearch className="w-6 h-10" />
 
-            <AiOutlineMenu onClick={handleOpenMenu} className="w-8 h-6" />
+            <AiOutlineMenu onClick={handleOpenMenu} className="w-6 h-10" />
           </div>
         </div>
         {menuIsOpen ? (

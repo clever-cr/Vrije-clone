@@ -8,37 +8,36 @@ const Features = () => {
         <div className="bg-white">
           <div className="px-[132px] py-[60px] flex gap-5 sm:px-5 sm:flex-col">
             <Card
-              title={"VU main menu"}
-              style={"text-blue"}
-              description={"Home"}
-              descr2={"Education"}
-              descr3={"Research"}
-              descr4={"About VU Amsterdam"}
-              descr5={"University Library"}
-              descr6={"VU Press Office"}
-              descr7={"Alumni"}
-              arrow={<AiOutlineArrowRight />}
+              title="VU main menu"
+              titleStyle="text-blue"
+              descriptions={[
+                "Home",
+                "Education",
+                "Research",
+                "About VU Amsterdam",
+                "University Library",
+                "VU Press Office",
+                "Alumni",
+              ]}
             />
             <Card
-              style={"text-orange"}
+              titleStyle={"text-orange"}
               title={"Most searched"}
-              description={"Home"}
-              descr2={"Education"}
-              descr3={"Research"}
-              descr4={"About VU Amsterdam"}
-              descr5={"University Library"}
-              descr6={"VU Press Office"}
-              descr7={"Alumni"}
-              arrow={<AiOutlineArrowRight />}
+              descriptions={[
+                "Home",
+                "Education",
+                "Research",
+                "About VU Amsterdam",
+                "University Library",
+                "VU Press Office",
+                "Alumni",
+              ]}
             />
             <Card
-              style={"text-[#008053]"}
+              titleStyle={"text-[#008053]"}
               title={"Featured"}
-              description={"Home"}
-              descr2={"Education"}
-              descr3={"Research"}
-              arrow={<AiOutlineArrowRight />}
-              last
+              descriptions={["Home", "Education", "Research"]}
+              hasIcons={true}
             />
           </div>
         </div>

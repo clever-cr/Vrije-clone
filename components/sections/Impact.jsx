@@ -13,7 +13,7 @@ const Impact = () => {
     <div className="px-134 sm:px-0">
       <div className="max-w-[1258px] mx-auto">
         <div className="bg-[#FAF7F5] pb-[60px] ">
-          <h2 className="text-orange text-[38px] leading-[56px] font-light px-[132px] pt-[60px] pb-[25px] sm:px-0 sm:pt-[30px] sm:text-[30px]">
+          <h2 className="text-orange text-[38px] leading-[56px] font-light px-[132px] pt-[60px] pb-[25px] sm:px-5 sm:leading-9 sm:text-[30px] sm:pt-[30px] sm:pb-[15px]">
             Impact
           </h2>
           <Image
@@ -42,15 +42,15 @@ const Impact = () => {
             </div>
 
             <div className="flex justify-end gap-[37px] items-center">
-              <div className="flex text-orange gap-[18px] items-center sm:hidden">
+              <div className="flex text-orange gap-[18px]- items-center sm:hidden">
                 <GoPrimitiveDot className="w-8 h-10" />
-                <RxDotFilled />
-                <RxDotFilled />
-                <RxDotFilled />
+                <RxDotFilled className="w-7 h-12" />
+                <RxDotFilled className="w-7 h-12" />
+                <RxDotFilled className="w-7 h-12" />
               </div>
-              <div className="flex justify-center text-[#333333] bg-[#FCD3B6] px-[23px] py-[18px] gap-11 sm:absolute sm:-top-[76px] sm:right-0">
-                <AiOutlineLeft className="w-8  h-10" />
-                <AiOutlineRight className="w-8  h-10" />
+              <div className="flex justify-center text-[#333333] bg-[#FCD3B6] px-4 py-3 gap-11 sm:absolute sm:-top-[56px] sm:right-0 sm:p-3 sm:gap-9">
+                <AiOutlineLeft className="w-8  h-10  sm:w-7 sm:h-8" />
+                <AiOutlineRight className="w-8  h-10 sm:w-7 sm:h-8" />
               </div>
             </div>
           </div>

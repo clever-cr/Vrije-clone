@@ -43,7 +43,7 @@ const Students = () => {
   return (
     <div className="px-134  sm:px-0 sm:mt-0">
       <div className=" max-w-[1258px] mx-auto">
-        <div className="bg-white  pb-[60px] relative z-10 -mt-11 sm:mt-0">
+        <div className="bg-white relative z-10 -mt-11 sm:mt-0">
           <div className="flex justify-between pl-32 pr-[98px] pt-[34px] sm:px-0 ">
             {data.map((item, index) => {
               return (
@@ -59,12 +59,12 @@ const Students = () => {
               );
             })}
           </div>
-          <div className="flex px-[132px] gap-5 gap-[35px] pt-justify-between pt-[74px] sm:flex-col sm:px-5">
+          <div className="flex px-[132px] gap-[35px] pt-justify-between pt-[74px] sm:flex-col sm:px-5 pb-[60px] sm:pb-[30px]">
             {info.map((item, index) => {
               return (
                 <div
                   key={index}
-                  className="shadow-md   w-[484px] sm:w-full px-[30px] p-[30px]  sm:py-[20px]"
+                  className="shadow-md w-[484px] sm:w-full px-[30px] p-[30px] sm:py-[20px]"
                 >
                   <div className="flex items-center justify-between pb-[30px] sm:pb-[10px]">
                     <h1 className="text-[38px] text-blue font-light">
@@ -108,8 +108,8 @@ const Students = () => {
               );
             })}
           </div>
-          <div className="pt-[30px]">
-            <div className="bg-white px-[132px] py-[60px] sm:px-5">
+          <div>
+            <div className="bg-white- px-[132px] py-[60px] sm:px-5 sm:py-[30px]">
               <div className="bg-blue flex px-[60px] justify-between py-[45px] sm:flex-col sm:py-[30px] sm:px-[20px] sm:gap-[35px]">
                 <p className="text-2xl leading-9 text-white font-medium sm:text-[22px] sm:leading-[33px]">
                   Do you also want to change your world?

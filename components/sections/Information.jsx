@@ -20,7 +20,7 @@ const Information = () => {
               return (
                 <div
                   key={index}
-                  className="shadow-lg w-[484px] sm:w-full h-[179px] flex flex-col px-[30px] py-[25px] justify-between "
+                  className="shadow-medium w-[484px] sm:w-full h-[179px] flex flex-col px-[30px] py-[25px] justify-between "
                 >
                   <div className="flex flex-col gap-5">
                     <p

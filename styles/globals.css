@@ -8,3 +8,6 @@ body {
   margin: 0;
   background-color: #eeebe9;
 }
+.scrollHidden::-webkit-scrollbar {
+  display: none;
+}
