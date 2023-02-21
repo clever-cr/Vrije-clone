@@ -58,7 +58,7 @@ const NavBar = () => {
                 </svg>
               </div>
               <div className="">
-                <div className="flex flex-col justify-between space-y-10 cursor-pointer pt-52 px-36">
+                <div className="flex flex-col justify-between space-y-10 cursor-pointer pt-52 px-36 sm:px-5">
                   {[
                     "Study at VU Amsterdam",
                     "Research",
